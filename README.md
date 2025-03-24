@@ -9,7 +9,7 @@ También dejo respuesta a tres preguntas presentes en el enunciado
 Los modelos de ML fueron entrenados en el esquema de train-validation-test, que pretende utilizar la instancia de test como una exposición del modelo a observaciones no utilizadas para el entrenamiento ni para la selección de hiperparámetros. Idealmente, las métricas logradas sobre este set de testeo deberían mantenerse constantes al incorporar nuevas observaciones.
 
 ### Suponiendo que la performance predictiva en producción es muy diferente a la esperada, ¿Cuáles cree que son las causas más probables?
-Se me ocurren tres escenarios:
+Se me ocurren dos escenarios:
 - Nuestro modelo se encuentra subajustado o sobreajustado. La estrategia de division en set de entrenamiento-validación-testeo intenta impedir esto, pero podría haber errores al realizarlo (por ejemplo, data leaking - por la cual la variable objetivo se filtra en los datos de entrenamiento y mejora las métricas de manera espúrea.
 - Puede ser que las características o features propias de las distintas clases vayan evolucionando con el tiempo y nuestro modelo no pueda realizar la separación de clases de forma adecuada. Esto se suele llamar Data Drifting (o deriva de datos).
 
