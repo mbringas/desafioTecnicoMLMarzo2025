@@ -12,9 +12,8 @@ Los modelos de ML fueron entrenados en el esquema de train-validation-test, que 
 Se me ocurren tres escenarios:
 - Nuestro modelo se encuentra subajustado o sobreajustado. La estrategia de division en set de entrenamiento-validación-testeo intenta impedir esto, pero podría haber errores al realizarlo (por ejemplo, data leaking - por la cual la variable objetivo se filtra en los datos de entrenamiento y mejora las métricas de manera espúrea.
 - Puede ser que las características o features propias de las distintas clases vayan evolucionando con el tiempo y nuestro modelo no pueda realizar la separación de clases de forma adecuada. Esto se suele llamar Data Drifting (o deriva de datos).
-- 
 
-###¿Qué pasos debería seguir para poner el nuevo modelo en producción?
+### ¿Qué pasos debería seguir para poner el nuevo modelo en producción?
 Para poner este modelo en producción se debe elegir un esquema con el cual evaluar las transacciones que se van realizando 
 - Una a una: a medida que se realizan, pasan por el modelo de machine learning y se informa el resultado. Esto es bueno para tener resultados de forma inmediata y poder actuar en consecuencia en caso de sospecha de fraude.
 - En batches: se acumula una cantidad determinada de transacciones, se generan los resultados y se estiman métricas del batch. Esto es bueno para saber si la performance varia mucho respecto del momento del entrenamiento.
