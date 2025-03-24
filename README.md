@@ -2,7 +2,7 @@
 Quedan a disposición:
 
 - [Código en Google Colab](https://colab.research.google.com/drive/1_PYC2rakKr1WTeHQQVPXGJ29ESY38X4u?usp=sharing)
-- [Informe del desafío técnico](Informe del desafío técnico - ML Marzo 2025.pdf)
+- [Informe del desafío técnico](desafioTecnicoMLMarzo2025/Informe del desafío técnico - ML Marzo 2025.pdf)
 
 También dejo respuesta a tres preguntas presentes en el enunciado
 ### ¿Qué pasos puedo seguir para intentar asegurar que la performance del modelo en laboratorio será similar a la de producción?
